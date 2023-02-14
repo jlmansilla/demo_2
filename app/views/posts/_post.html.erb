@@ -1,4 +1,4 @@
-<div id="<%= dom_id post %>">
+<div id="<%= dom_id(post) %>">
   <p>
     <strong>Title:</strong>
     <%= post.title %>
@@ -9,8 +9,7 @@
   </p>
 
   <p>
-    <strong><%= pluralize post.comments.count, "comment" %>:</strong>
-    
+    <strong><%= pluralize post.comments.count, "comment" %></strong>
   </p>
 
   <p>
